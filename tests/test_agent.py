@@ -10,7 +10,7 @@ import pytest
 
 def test_imports():
     """Package and main components can be imported."""
-    from resume_reader import ResumeAgent, __version__
+    from app import ResumeAgent, __version__
 
     assert __version__ == "0.1.0"
     assert ResumeAgent is not None
@@ -18,7 +18,7 @@ def test_imports():
 
 def test_agent_requires_api_key():
     """ResumeAgent raises when no API key is provided and env is unset."""
-    from resume_reader import ResumeAgent
+    from app import ResumeAgent
 
     key = os.environ.pop("GOOGLE_API_KEY", None)
     try:
@@ -31,7 +31,7 @@ def test_agent_requires_api_key():
 
 def test_config_constants():
     """Config module exposes expected constants."""
-    from resume_reader.config import DEFAULT_MODEL, ENV_GOOGLE_API_KEY
+    from app.config import DEFAULT_MODEL, ENV_GOOGLE_API_KEY
 
     assert DEFAULT_MODEL == "gemini-2.5-flash"
     assert ENV_GOOGLE_API_KEY == "GOOGLE_API_KEY"

@@ -8,7 +8,6 @@ import sys
 
 # Ensure package is importable when run from project root
 if __name__ == "__main__":
-    sys.path.insert(0, "src")
-    from resume_reader import main
+    from app.main import main
 
     main()

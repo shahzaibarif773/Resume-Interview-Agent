@@ -6,7 +6,7 @@ import sys
 
 from dotenv import load_dotenv
 
-from .agent import ResumeAgent
+from app.agent.agent import ResumeAgent
 
 # Load .env so GOOGLE_API_KEY is available
 load_dotenv()
