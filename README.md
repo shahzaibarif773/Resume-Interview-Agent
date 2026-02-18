@@ -1,4 +1,4 @@
-# Resume Reader AI
+# Resume Interview Agent
 
 An intelligent AI agent that reads PDF resumes and conducts interactive interviews by asking relevant questions about the candidate's experience, skills, and background.
 
